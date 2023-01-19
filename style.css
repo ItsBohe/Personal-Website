@@ -26,3 +26,34 @@
   .grid-item img {
     max-width: 100%;
   }
+
+  .button-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    height: 50%; /* This will make the container take up the entire bottom half of the screen */
+    width: auto;
+    bottom: 0; /* This will make the container stick to the bottom of the screen */
+    grid-gap: 5px;
+    padding: 10px;
+    justify-content: center; /* This will center the grid items horizontally */
+    align-items: center;
+    margin:auto;
+  }
+  
+  .styled-button {
+    background: linear-gradient(to bottom, #ff8a00, #e52e71); /* This will add a gradient background to the buttons */
+    color: white;
+    border: none;
+    border-radius: 20px; /* This will make the buttons rounded */
+    font-size: 20px; /* This will make the text bigger */
+    font-family: 'Roboto', sans-serif; /* This will make the text nicer */
+    padding: 10px; /* This will add some padding to the buttons */
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-weight: bold;
+    cursor: pointer; /* This will change the cursor to a pointer when the mouse is over the button */
+    text-transform: uppercase; /* This will make the text uppercase */
+    letter-spacing: 2px; /* This will add 2px of spacing between the letters*/
+  }
